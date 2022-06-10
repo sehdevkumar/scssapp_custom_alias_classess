@@ -3,7 +3,7 @@
   @return $remValue;
 }
 
-@mixin customizedClass(
+@mixin genrateCustomizedAliasClasses(
   $attrName,
   $customClassName,
   $start: 1,

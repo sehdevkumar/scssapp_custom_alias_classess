@@ -1,3 +1,6 @@
-@import "mixins.scss" ;
+@import "mixins.scss";
 
-@include  customizedClass("font-size", "fs-", 1, 400,'vw');
+@include genrateCustomizedAliasClasses("font-size", "fs-", 1, 400, "rem");
+@include genrateCustomizedAliasClasses("width", "w-", 1, 400, "rem");
+@include genrateCustomizedAliasClasses("height", "h-", 1, 400, "rem");
+@include genrateCustomizedAliasClasses("padding", "p-", 1, 400, "rem");
