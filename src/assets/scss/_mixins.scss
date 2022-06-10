@@ -1,0 +1,21 @@
+@function convertPixelToREM($pixel) {
+  $remValue: ($pixel);
+  @return $remValue;
+}
+
+@mixin customizedClass(
+  $attrName,
+  $customClassName,
+  $start: 1,
+  $end: 10,
+  $suffix: "%",
+  $step: 1
+) {
+  @for $i from $start through $end {
+    $iterativeCount: convertPixelToREM($i * $start);
+
+    .#{$customClassName}#{$iterativeCount} {
+      #{$attrName}: #{$iterativeCount/16}#{$suffix};
+    }
+  }
+}
